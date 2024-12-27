@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f7f8fc;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #FFD700;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar nav ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Marks Section */
+.marks-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.marks-section h2 {
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+.marks-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.semester-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.semester-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.semester-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.semester-card h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.subject {
+    margin-bottom: 1rem;
+}
+
+.subject span {
+    display: block;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    position: relative;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #3498db;
+    color: white;
+    font-size: 0.9rem;
+}

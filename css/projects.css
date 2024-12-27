@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: #ffde59;
+}
+/* Hero Section */
+.hero-section {
+    height: 50vh;
+    background: url('../images/project1.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+body.dark-mode .projects-section {
+    background-color: #1a1a1a;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .project-card {
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card h3 a {
+    color: #0074D9;
+    text-decoration: none;
+}
+
+.project-card h3 a:hover {
+    color: #005bb5;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
